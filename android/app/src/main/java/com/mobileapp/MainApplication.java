@@ -1,13 +1,12 @@
 package com.mobileapp;
 
 import android.app.Application;
-
+import com.oney.WebRTCModule.WebRTCModulePackage;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
-
 import java.util.Arrays;
 import java.util.List;
 
@@ -42,5 +41,13 @@ public class MainApplication extends Application implements ReactApplication {
   public void onCreate() {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
-  }
+  } 
+   
+   @Override
+    protected List<ReactPackage> getPackages() {
+      return Arrays.<ReactPackage>asList(
+        new MainReactPackage(),
+        new WebRTCModulePackage()                 
+      );
+    }
 }
