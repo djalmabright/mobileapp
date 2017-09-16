@@ -19,7 +19,8 @@
 		"react": "16.0.0-alpha.12",
 		"react-dom": "^15.6.1",
 		"react-native": "0.45.1",
-		"web3": "^0.19.1"
+		"web3": "^0.19.1",
+	        "react-native-webrtc":"^1.58.2"
 	},
 	"devDependencies": {
 		"@types/jest": "^20.0.2",
